@@ -1,4 +1,4 @@
-from math_series import fibonacci
+from math_series import fibonacci, lucas
 
 
 def test_fibonacci_zero():
@@ -22,4 +22,27 @@ def test_fibonacci_eight():
 def test_fibonacci_twenty():
     actual = fibonacci(20)
     expected = 6765
+    assert actual == expected
+
+
+def test_lucas_zero():
+    actual = lucas(0)
+    expected = 2
+    assert actual == expected
+
+
+def test_lucas_one():
+    actual = lucas(1)
+    expected = 1
+    assert actual == expected
+
+
+def test_lucas_ten():
+    actual = lucas(10)
+    expected = 2
+    assert actual == expected
+
+def test_lucas_twenty():
+    actual = lucas(20)
+    expected = 2
     assert actual == expected
