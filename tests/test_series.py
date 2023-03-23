@@ -1,4 +1,4 @@
-from math_series import fibonacci, lucas, sum_series
+from ..math_series import fibonacci, lucas, sum_series
 
 
 def test_fibonacci_zero():
